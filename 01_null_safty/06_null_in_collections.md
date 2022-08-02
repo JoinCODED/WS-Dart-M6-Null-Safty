@@ -1,4 +1,4 @@
-Suppose we have this list:
+Suppose we have the following list:
 
 ```dart
 void main() {
@@ -16,7 +16,7 @@ void main() {
 
 Dart will complain about a `null` value in a list of `String`.
 
-To solve this, we can tell dart this is a list of `nullable` strings:
+To solve that, we can tell Dart that this is a list of `nullable` strings:
 
 ```dart
 void main() {
@@ -24,7 +24,7 @@ void main() {
 }
 ```
 
-Let's try to iterate over this list and print an upperCase of all string:
+Let's try to iterate over this list and print an upperCase of all strings:
 
 ```dart
 void main() {
@@ -36,7 +36,7 @@ void main() {
 }
 ```
 
-As you see, we get an error because we can't use `toUpperCase()` which is a string method on null, to solve this we need to promote `country` to a non nullable variable:
+As you can see, we got an error because `.toUpperCase()` is a string method and we can't use it on null. To solve that, we need to promote `country` to a non-nullable variable:
 
 ```dart
 void main() {
@@ -50,7 +50,7 @@ void main() {
 }
 ```
 
-What about a shorter way? we can use `Conditional access operator`:
+What about a shorter way? we can use `Conditional Access Operator`:
 
 ```dart
 void main() {
@@ -62,4 +62,4 @@ void main() {
 }
 ```
 
-By adding a `?` we are telling dart that do everything after the question mark, only if `country` is not `null`!
+By adding a `?`, we are telling Dart to do what's required after the question mark, only if `country` is not `null`.

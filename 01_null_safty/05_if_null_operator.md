@@ -13,7 +13,7 @@ void main() {
 }
 ```
 
-In the previous example, suppose we want to assign `value` an integer `0` if `y` in `null`, so we need to check for `y` if it's `null`, one way to do this is to use the ternary operator:
+In the previous example, suppose we want to assign an integer `0` to `value` if `y` is `null`. To do that, we use the ternary operator:
 
 ```dart
 void main() {
@@ -30,7 +30,7 @@ void main() {
 }
 ```
 
-This works, but we have a much shorter way to do the same job for us:
+That works, but we have a much shorter way that gets the same job done:
 
 ```dart
 void main() {
@@ -47,4 +47,4 @@ void main() {
 }
 ```
 
-What this does, is to assign `0` if `y` is `null`.
+It assigns `0` to `value` if `y` is `null`.

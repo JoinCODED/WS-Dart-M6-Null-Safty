@@ -6,7 +6,7 @@ void main() {
 }
 ```
 
-But if we really want to assign `null` to this variable, we have to declare it as nullable, and we do this by adding `?` after the name of the type:
+If we want to assign `null` to this variable, we have to declare it as nullable, and we do that by adding `?` after the type name:
 
 ```dart
 void main() {
@@ -14,7 +14,7 @@ void main() {
 }
 ```
 
-And we can remove the initializer and `x` will be set to `null` by default:
+We can remove the initializer, and `x` will be set to `null` by default:
 
 ```dart
 void main() {
@@ -22,7 +22,7 @@ void main() {
 }
 ```
 
-And if we declare another variable and we add them together, we will get an error at compile time, and that's one useful use of dart being `null` safe language.
+If we declare another variable and we add it to x, we will get an error at compile time, and that's one of the useful usages of Dart being `null` safe language.
 
 ```dart
 void main() {
